@@ -4,11 +4,13 @@ Elasticsearch is a popular open-source search and analytics engine for use cases
 For the above things we have to follow these steps and assume that you have Linux OS in your system and Docker engine are running.
 
 Make a Docker file with Ubuntu 16.04 Base image
+
 Build Image from Dockerfile
 
 Run Docker Container
 
 To configure your elasticsearch server execute the container and configure as per your requirements
+
 DOCKERFILE TO BUILD ELASTICSEACRH IMAGE
 
 # BUILD IMAGE FROM DOCKERFILE
