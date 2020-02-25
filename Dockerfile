@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Rahul Kathpal
+MAINTAINER Rahul Kathpal <kathpalrk@gmail.com>
 #some_ important _library
 RUN apt-get update && apt-get install wget build-essential gcc make -y
 #RUN apt-get install common-software-properties  -y

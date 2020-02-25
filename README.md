@@ -2,9 +2,12 @@
 Elasticsearch is a popular open-source search and analytics engine for use cases such as log analytics, real-time application monitoring, and click stream analytics.
 
 For the above things we have to follow these steps and assume that you have Linux OS in your system and Docker engine are running.
+
 Make a Docker file with Ubuntu 16.04 Base image
 Build Image from Dockerfile
+
 Run Docker Container
+
 To configure your elasticsearch server execute the container and configure as per your requirements
 DOCKERFILE TO BUILD ELASTICSEACRH IMAGE
 
@@ -14,12 +17,15 @@ Example: # docker  build  –t  <tag= repo/imagename>
  docker   build –t  rahulkathpal/elasticsearch   .
 
 docker    images
+
 REPOSITORY                 TAG     IMAGE ID       CREATED       SIZE
+
 rahulkathpal/elasticseacrh  latest  3739ab6g6f4e   10sec ago     1.54GB
 
 RUN DOCKER CONTAINER
 
 Example: # docker run –it    -p   --name   -d     
+
  docker  run  –it  -p 9200:9200 --name elasticsearch-server   –d  3739ab6g6f4e   /bin/bash
 
 Now we can see that our elasticsearch-server are running.
@@ -61,7 +67,9 @@ root@f8249c02deae:~# service elasticsearch start
 
 
 Test the elasticsearch server are running
+
 root@f8249c02deae:~#  curl http://localhost:9200
+
 {
   "name" : "Tech-Blog",
  "cluster_name" : "linux-point- development ",
@@ -75,6 +83,7 @@ root@f8249c02deae:~#  curl http://localhost:9200
  },
   "tagline" : "You Know, for Search"
 }
+
 press ctrl+D to exit from container and test from base Machine
 
 Now with your Public/Private IP you can See in browser by http://<ip>:9200
